@@ -3,28 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://glitch.com/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     
     <title>Hello World!</title>
 
-    <!-- The website stylesheet -->
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- The website JavaScript file -->
+    <!-- Scripts -->
     <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.js"></script>
 </head>
 <body>
     <div id="conteneur">
+        <!-- SVG -->
         <svg id="produit-svg" class="color-changing-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
             <defs>
                 <style>.cls-1{fill:#ffa655}</style>
             </defs>
-            <path id="product-shape" class="cls-1" d="M989.34 492.97s9.2 3.24 17.19 16.08 14.46 27.1 19.82 33.78 22.18 22.99 27.54 29.06 10.62 15.67 16.48 29.02 9.4 19.21 9.4 19.21h2.73s-2.12-19.42-2.12-23.66-2.53-33.17-2.53-33.17-4.55-7.75-4.65-16.75.3-7.99-3.34-15.98-13.15-19.92-13.55-20.53-7.08-4.35-7.08-4.35-31.85-7.08-34.08-7.96-15.91-3.78-16.11-3.91-8.16-1.48-8.16-1.48l-1.55.64ZM872.61 775.75s6.61-36 87.91-66.34c15.78-10.52 35.19-20.22 12.54-50.56-16.18-16.58-15.78-15.83-15.78-15.83s-212.95 94.45-276.05 100.92c-10.52 1.08-65.87 2.16-51.1-62.56 1.21-3.84 17.6-37.01 55.62-56.83l1.01 1.82s-12.61 42.81 28.65 50.9c13.75 2.16 42.61 7.82 169.08-39.64l48.81-18.61s-46.99-44.22-83.39-61.01c-33.17-17.19-64.11-32.16-80.49-38.43 1.42 3.64 8.29 19.01 3.84 41.87-6.88 12.34-19.62 29.66-44.83 28.58-26.43-.13-56.12-7.48-93.13 22.25-23.46 16.99-25.38 21.57-65.43 30.2-22.25 6.61-26.97 7.82-43.01 19.28l-5.93 3.1s3.64 36.27 24.4 55.96c19.42 19.42 48.54 42.34 56.9 52.04s15.37 28.31 15.37 28.31 172.82-28.89 255.02-25.43ZM162.81 726.48s57.44-16.79 102.34-21.64c51.17-10.11 84.13-20.63 84.13-20.63s2.8 9.84 6.34 11.76 10.92 6.37 22.45 4.75 33.4-6.61 33.4-6.61 26.9-8.8 28.01-8.8 4.15-1.62 4.15-1.62 8.46 40.15 1.31 52.01c-8.22 9.3-18.88 16.45-43.69 16.58s-141.17-1.75-141.17-1.75-55.82-4.99-75.78-13.08c-18.74-6.74-21.51-10.11-21.51-10.11v-.88Z"/>
+            <path id="product-shape" class="cls-1" d="M989.34 492.97s9.2 3.24 17.19 16.08..."/>
         </svg>
-        <img id="background-image" src="https://cdn.glitch.global/58decd59-8055-4be5-90e4-795e1d614624/nike_shoes_1200x1200.jpg?v=1741278750247" alt="Chaussure">
-        
+
+        <!-- Image de fond -->
+        <img id="background-image" src="nike_shoes_1200x1200.jpg" alt="Chaussure">
+
+        <!-- Sélecteur de couleur -->
         <input class="jscolor {onFineChange:'changeColor(this)'}" value="ff7f00">
-    </div>
-</body>
-</html>
+        
+        <!-- Couleurs prédéfinies -->
+        <div class="colors">
+            <div class="color" data-hex="#ff7f00" style="background-color: #ff7f00;"></div>
+            <div class="color" data-hex="#ff0000" style="background-color: #ff0000;"></div>
+            <div class
